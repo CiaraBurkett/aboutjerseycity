@@ -2,7 +2,6 @@ require 'sinatra'
 require 'slim'
 require 'thin'
 require 'pg'
-require 'sqlite3'
 require 'sequel'
 
 #  Connect to an in-memory database
