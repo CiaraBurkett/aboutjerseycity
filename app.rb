@@ -20,9 +20,28 @@ html
   
   body
   	.container
-  		==yield
+  		.row
+			header
+				div class="large-4 columns"
+					img src="http://placehold.it/400x100&text=Logo"
+				div class="large-8 columns"
+					nav
+						ul class="inline-list right"
+							li
+								a href="#" Link 1
+							li
+								a href="#" Link 2
+							li
+								a href="#" Link 3
+							li
+								a href="#" Link 4
+							li
+								a href="#" Link 5
 
-  		footer
+  	==yield
+
+  	footer class="row"
+  		div class="large-12 columns"
   			p This is the footer.
 
 script src="javascripts/vendor/jquery.js"
