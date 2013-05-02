@@ -14,6 +14,7 @@ html
   	title About Jersey City, a local directory
   	link rel="stylesheet" href="stylesheets/app.css"
   	link rel="stylesheet" href="stylesheets/normalize.css"
+  	script src="javascripts/vendor/custom.modernizr.js"
   
   body
   	.container
