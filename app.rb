@@ -12,8 +12,8 @@ html
   head
   	meta charset="UTF-8"
   	title About Jersey City, a local directory
-  	link rel="stylesheet" href="app.css"
-  	link rel="stylesheet" href="normalize.css"
+  	link rel="stylesheet" href="stylesheets/app.css"
+  	link rel="stylesheet" href="stylesheets/normalize.css"
   
   body
   	.container
