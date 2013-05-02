@@ -1,6 +1,6 @@
 require 'sinatra'
 require 'slim'
-require 'unicorn'
+require 'thin'
 
 get '/' do
   slim :index
