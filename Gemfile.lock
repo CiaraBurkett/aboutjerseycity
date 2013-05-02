@@ -7,13 +7,13 @@ GEM
     binding_of_caller (0.7.1)
       debug_inspector (>= 0.0.1)
     coderay (1.0.9)
-    daemons (1.1.9)
     debug_inspector (0.0.2)
     erubis (2.7.0)
-    eventmachine (1.0.3)
+    kgio (2.8.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
+    raindrops (0.11.0)
     sinatra (1.4.2)
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
@@ -22,11 +22,11 @@ GEM
       temple (~> 0.3.0)
       tilt (~> 1.2)
     temple (0.3.5)
-    thin (1.5.1)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
     tilt (1.4.0)
+    unicorn (4.6.2)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
 
 PLATFORMS
   ruby
@@ -36,4 +36,4 @@ DEPENDENCIES
   binding_of_caller
   sinatra
   slim
-  thin
+  unicorn
