@@ -2,6 +2,9 @@ require 'sinatra'
 require 'slim'
 require 'thin'
 
+#  Database configuration
+
+#  Routes to static pages
 get '/' do
   slim :index
 end
@@ -21,6 +24,8 @@ end
 get '/thankyou' do
   slim :thankyou
 end
+
+#  Retrieve information from client
 
 __END__
 @@layout
@@ -58,7 +63,9 @@ html
 
   	footer class="row"
   		div class="large-12 columns"
-  			p This is the footer.
+  			p 
+  				small
+  					About Jersey City is an <a href="http://www.entertainmentbear.com" target="_blank">Entertainment Bear</a> labor of love!
 
 section id="submitModal" class="reveal-modal large"
 	h3 Submit Your Project!
