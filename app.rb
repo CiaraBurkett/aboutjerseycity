@@ -44,7 +44,7 @@ html
 							li
 								a href="/about" About
 							li
-								a href="#submit" Submit
+								a href="#submit" data-reveal-id="submitModal" Submit
 							li
 								a href="/blog" Blog
 							li
@@ -55,6 +55,38 @@ html
   	footer class="row"
   		div class="large-12 columns"
   			p This is the footer.
+
+section id="submitModal" class="reveal-modal large"
+	h3 Submit Your Project!
+	p Something about localism and grassroots blah blah.
+
+	form
+		fieldset
+			legend Show the community what you're working on.
+
+			.row
+				div class="large-12 columns"
+					label Project Name
+					input type="text" placeholder="Example Project"
+
+			.row
+				div class="large-6 columns"
+					label Project URL
+					input type="text" placeholder="example.com"
+				div class="large-6 columns"
+					label Your Email Address
+					input type="text" placeholder="me@example.com"
+
+			.row
+				div class="large-12 columns"
+					label Project Description
+					textarea placeholder="Write a brief two to three sentence description of your project here."
+
+			.row
+				div class="large-12 columns"
+					input class="button" type="submit" value="Submit"
+
+	a class="close-reveal-modal" &#215;
 
 script src="javascripts/vendor/jquery.js"
 script src="javascripts/foundation/foundation.js"
