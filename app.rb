@@ -28,15 +28,15 @@ html
 					nav
 						ul class="inline-list right"
 							li
-								a href="#" Link 1
+								a href="#" Home
 							li
-								a href="#" Link 2
+								a href="#" About
 							li
-								a href="#" Link 3
+								a href="#" Submit
 							li
-								a href="#" Link 4
+								a href="#" Blog
 							li
-								a href="#" Link 5
+								a href="#" Contact
 
   	==yield
 
