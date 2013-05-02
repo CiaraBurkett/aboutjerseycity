@@ -71,7 +71,7 @@ section id="submitModal" class="reveal-modal large"
 	h3 Submit Your Project!
 	p By listing your project with About Jersey City, you're not just driving more traffic to your website (although it certaintly doesn't hurt).  You're encouraging your friends and neighbors to contribute to the local economy in ways that benefit us all.
 
-	form
+	form method="POST" action="/"
 		fieldset
 			legend Show the community what you're working on.
 
