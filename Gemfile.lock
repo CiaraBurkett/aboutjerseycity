@@ -1,7 +1,15 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    better_errors (0.8.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.1)
+      debug_inspector (>= 0.0.1)
+    coderay (1.0.9)
     daemons (1.1.9)
+    debug_inspector (0.0.2)
+    erubis (2.7.0)
     eventmachine (1.0.3)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -24,6 +32,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   sinatra
   slim
   thin
