@@ -6,6 +6,18 @@ get '/' do
   slim :index
 end
 
+get '/about' do
+  slim :about
+end
+
+get '/blog' do
+  slim :blog
+end
+
+get '/contact' do
+  slim :contact
+end
+
 __END__
 @@layout
 doctype html
@@ -28,15 +40,15 @@ html
 					nav
 						ul class="inline-list right"
 							li
-								a href="#" Home
+								a href="/" Home
 							li
-								a href="#" About
+								a href="/about" About
 							li
-								a href="#" Submit
+								a href="#submit" Submit
 							li
-								a href="#" Blog
+								a href="/blog" Blog
 							li
-								a href="#" Contact
+								a href="/contact" Contact
 
   	==yield
 
