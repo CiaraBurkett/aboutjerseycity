@@ -5,6 +5,8 @@ require 'pg'
 require 'sequel'
 
 #  Database configuration
+Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost/directory')
+
 
 #  Retrieve information from client
 
