@@ -23,6 +23,7 @@ GEM
     slim (1.0.1)
       temple (~> 0.3.0)
       tilt (~> 1.2)
+    sqlite3 (1.3.7)
     temple (0.3.5)
     thin (1.5.1)
       daemons (>= 1.0.9)
@@ -40,4 +41,5 @@ DEPENDENCIES
   sequel
   sinatra
   slim
+  sqlite3
   thin

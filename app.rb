@@ -2,33 +2,61 @@ require 'sinatra'
 require 'slim'
 require 'thin'
 require 'pg'
+require 'sqlite3'
 require 'sequel'
 
-#  Database configuration
-Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost/directory')
+#  Connect to an in-memory database
+DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://zdrdzztahaphpr:QC0RU1CXYaBsWusliolS1gJ8QQ@ec2-54-225-112-205.compute-1.amazonaws.com:5432/d2jo3hqrbff1u7')
+
+#  Create a projects table
+DB.create_table :projects do
+	primary_key :id
+	String :project_name
+	String :project_url
+	String :user_email
+	String :description
+end
+
+#  Create a dataset from the projects table
+projects = DB[:projects]
 
 
-#  Retrieve information from client
+#  Create a Project object
+class Project < Sequel::Model
+
+end
 
 #  Routes to static pages
 get '/' do
-  slim :index
+	@projects = Project.all
+  	slim :index
 end
 
 get '/about' do
-  slim :about
+  	slim :about
 end
 
 get '/blog' do
-  slim :blog
+  	slim :blog
 end
 
 get '/contact' do
-  slim :contact
+  	slim :contact
 end
 
 get '/thankyou' do
-  slim :thankyou
+  	slim :thankyou
+end
+
+#  Retrieve information from client
+post '/' do
+	project = Project.new
+	project.project_name = params[:project_name]
+	project.project_url = params[:project_url]
+	project.user_email = params[:user_email]
+	project.description = params[:description]
+	project.save
+	redirect '/thankyou'
 end
 
 __END__
