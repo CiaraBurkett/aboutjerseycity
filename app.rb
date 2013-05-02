@@ -10,9 +10,9 @@ __END__
 doctype html
 html
   head
-    meta charset="utf-8"
-    title About Jersey City, a local directory
-
+  	meta charset="UTF-8"
+  	title About Jersey City, a local directory
+  
   body
   	.container
   		==yield
