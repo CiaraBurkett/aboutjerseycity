@@ -18,6 +18,10 @@ get '/contact' do
   slim :contact
 end
 
+get '/thankyou' do
+  slim :thankyou
+end
+
 __END__
 @@layout
 doctype html
