@@ -11,9 +11,11 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     eventmachine (1.0.3)
+    pg (0.15.1)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
+    sequel (3.45.0)
     sinatra (1.4.2)
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
@@ -34,6 +36,8 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  pg
+  sequel
   sinatra
   slim
   thin

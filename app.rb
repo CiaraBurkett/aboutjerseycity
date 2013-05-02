@@ -1,8 +1,12 @@
 require 'sinatra'
 require 'slim'
 require 'thin'
+require 'pg'
+require 'sequel'
 
 #  Database configuration
+
+#  Retrieve information from client
 
 #  Routes to static pages
 get '/' do
@@ -24,8 +28,6 @@ end
 get '/thankyou' do
   slim :thankyou
 end
-
-#  Retrieve information from client
 
 __END__
 @@layout
