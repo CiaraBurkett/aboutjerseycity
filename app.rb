@@ -67,20 +67,20 @@ section id="submitModal" class="reveal-modal large"
 			.row
 				div class="large-12 columns"
 					label Project Name
-					input type="text" placeholder="Example Project"
+					input type="text" name="project_name" placeholder="Example Project"
 
 			.row
 				div class="large-6 columns"
 					label Project URL
-					input type="text" placeholder="example.com"
+					input type="text" name="project_url" placeholder="example.com"
 				div class="large-6 columns"
 					label Your Email Address
-					input type="text" placeholder="me@example.com"
+					input type="text" name="user_email" placeholder="me@example.com"
 
 			.row
 				div class="large-12 columns"
 					label Project Description
-					textarea placeholder="Write a brief two to three sentence description of your project here."
+					textarea name="description" placeholder="Write a brief two to three sentence description of your project here."
 
 			.row
 				div class="large-12 columns"
