@@ -4,6 +4,7 @@ About Jersey City is a directory of businesses, organizations, and artistic proj
 
 ## Todos
 
+* Widen Welcome panel to 12 columns
 * Make Login nav item a dropdown button with input fields
 * Add Users
 	* A User has many projects
