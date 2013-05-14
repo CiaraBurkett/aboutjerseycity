@@ -14,6 +14,7 @@ About Jersey City is a directory of businesses, organizations, and artistic proj
 	* A User has a profile/account
 		* Profile can be CRUD
 	* A User can go pro (monthly subscription) to get project pages (long-term?)
+		* Pro accounts do not see sponsored ads
 		* Project pages connect to all social networks for SEO
 * Add Admin
 * Social
