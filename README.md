@@ -19,3 +19,4 @@ About Jersey City is a directory of businesses, organizations, and artistic proj
 * Add Admin
 * Social
 	* New projects are automatically posted to @aboutjerseycity Twitter account
+	* New projects are automatically posted to Facebook page
