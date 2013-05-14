@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
 gem 'slim-rails'
+gem 'devise'
 
 group :development do
 	gem 'sqlite3'

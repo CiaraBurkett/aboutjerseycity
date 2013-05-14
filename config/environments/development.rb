@@ -34,4 +34,7 @@ Aboutjerseycity::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Default Devise URL for development environment
+  config.action_mailer.default_url_options = { :host => 'localhost:8080' }
 end
