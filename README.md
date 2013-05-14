@@ -9,6 +9,7 @@ About Jersey City is a directory of businesses, organizations, and artistic proj
 * <del>Add Users</del>
 	* <del>Users can sign up, login, and logout</del>
 	* A User has many projects
+		* Project feed is public
 		* Projects can be CRUD
 		* Projects have predefined categories that Users can choose from (up to 5)
 	* <del>A User has a profile/account</del>
