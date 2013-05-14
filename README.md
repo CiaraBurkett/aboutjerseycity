@@ -6,7 +6,8 @@ About Jersey City is a directory of businesses, organizations, and artistic proj
 
 * <del>Widen Welcome panel to 12 columns</del>
 * <del>Make Login nav item a dropdown button with input fields</del>
-* Add Users
+* <del>Add Users</del>
+	* Users can sign up, login, and logout
 	* A User has many projects
 		* Projects can be CRUD
 		* Projects have predefined categories that Users can choose from (up to 5)
@@ -16,4 +17,4 @@ About Jersey City is a directory of businesses, organizations, and artistic proj
 		* Project pages connect to all social networks for SEO
 * Add Admin
 * Social
-	* New projects are automatically posted to Twitter
+	* New projects are automatically posted to @aboutjerseycity Twitter account
