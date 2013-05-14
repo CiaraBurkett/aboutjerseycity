@@ -24,11 +24,11 @@ head
 body
 
   == render 'layouts/header'
-
-  .row
-    div class="large-12 columns"
-      div data-alert="" class="alert-box"
-        - flash.each do |name, msg|
+  - flash.each do |name, msg|
+    .row
+      div class="large-12 columns"
+        div data-alert="" class="alert-box"
+          / - flash.each do |name, msg|
           = content_tag(:div, msg, class: "alert alert-#{name}")
           a href="#" class="close" &times;
 
