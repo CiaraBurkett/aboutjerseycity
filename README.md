@@ -7,7 +7,7 @@ About Jersey City is a directory of businesses, organizations, and artistic proj
 * <del>Widen Welcome panel to 12 columns</del>
 * <del>Make Login nav item a dropdown button with input fields</del>
 * <del>Add Users</del>
-	* Users can sign up, login, and logout
+	* <del>Users can sign up, login, and logout</del>
 	* A User has many projects
 		* Projects can be CRUD
 		* Projects have predefined categories that Users can choose from (up to 5)
