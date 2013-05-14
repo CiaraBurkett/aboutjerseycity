@@ -14,11 +14,4 @@
 				li
 					= link_to "Contact", contact_path
 				li 
-					a href="#" class="tiny radius button dropdown" data-dropdown="login" Login
-					.f-dropdown#login
-						form
-							label Email Address
-							input type="text" placeholder="you@example.com"
-							label Password
-							input type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
-							input type="submit" value="submit" class="small button radius"
+					= link_to "Login", "#", :class => "small radius button"
