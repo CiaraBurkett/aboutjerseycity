@@ -4,7 +4,7 @@ gem 'rails', '3.2.13'
 gem 'slim-rails'
 gem 'devise'
 
-group :development do
+group :development, :test do
 	gem 'sqlite3'
 	gem 'better_errors'
 end
