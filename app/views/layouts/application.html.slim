@@ -23,17 +23,17 @@ head
 
 body
 
-  == render 'layouts/header'
+	== render 'layouts/header'
   
-  - flash.each do |name, msg|
-    .row
-      div class="large-12 columns"
-        div data-alert="" class="alert-box"
-          = content_tag(:div, msg, class: "alert alert-#{name}")
-          a href="#" class="close" &times;
+	- flash.each do |name, msg|
+    	.row
+      		div class="large-12 columns"
+        		div data-alert="" class="alert-box"
+          			= content_tag(:div, msg, class: "alert alert-#{name}")
+          			a href="#" class="close" &times;
 
-  == yield
+	== yield
 
-  == render 'layouts/footer'
+	== render 'layouts/footer'
 
-  = javascript_include_tag "application"
+	= javascript_include_tag "application"
