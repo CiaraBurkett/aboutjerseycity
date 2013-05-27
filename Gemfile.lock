@@ -42,15 +42,20 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
-    devise (2.2.3)
+    devise (2.0.5)
       bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.1)
+      orm_adapter (~> 0.0.3)
       railties (~> 3.1)
-      warden (~> 1.2.1)
+      warden (~> 1.1.1)
+    devise_mailchimp (0.0.4)
+      devise (>= 1.4.8, < 2.2.0)
+      hominid (~> 3.0.2)
+      rails (>= 3.0.0, < 3.3)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.2)
+    hominid (3.0.5)
     i18n (0.6.1)
     journey (1.0.4)
     jquery-rails (2.2.1)
@@ -64,7 +69,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.23)
     multi_json (1.7.3)
-    orm_adapter (0.4.0)
+    orm_adapter (0.0.7)
     pg (0.15.1)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -126,7 +131,7 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    warden (1.2.1)
+    warden (1.1.1)
       rack (>= 1.0)
     zurb-foundation (4.0.9)
       sass (>= 3.2.0)
@@ -137,7 +142,8 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   coffee-rails (~> 3.2.1)
-  devise
+  devise (~> 2.0.0)
+  devise_mailchimp
   jquery-rails
   pg
   rails (= 3.2.13)

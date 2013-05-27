@@ -7,7 +7,7 @@
 
 		  div
 		  	= f.label :email
-		  	= f.email_field :email, :autofocus => true 
+		  	= f.email_field :email, :autofocus => true
 
 		  div
 		  	= f.label :password
@@ -16,6 +16,10 @@
 		  div
 		  	= f.label :password_confirmation
 		  	= f.password_field :password_confirmation
+
+		  div
+		  	= f.label "Join Mailing List"
+		  	= f.check_box :join_mailing_list
 
 		  div
 		  	= f.submit "Sign up", :class => "radius button"
