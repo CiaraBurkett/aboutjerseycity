@@ -1,15 +1,17 @@
-p#notice = notice
+.row
+  div class="large-12 columns"
+    p#notice = notice
 
-p
-  strong Title:
-  = @project.title
-p
-  strong Url:
-  = @project.url
-p
-  strong Description:
-  = @project.description
+    p
+      strong Title:  
+      = @project.title
+    p
+      strong Url:  
+      = @project.url
+    p
+      strong Description:  
+      = @project.description
 
-= link_to 'Edit', edit_project_path(@project)
-'|
-= link_to 'Back', projects_path
+    = link_to 'Edit', edit_project_path(@project)
+
+    = link_to 'Back', projects_path
