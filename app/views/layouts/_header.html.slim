@@ -28,6 +28,8 @@ nav class="top-bar"
 					= link_to "Logout", destroy_user_session_path, method: :delete, :class => "button"
 			- else
 				li
+					= link_to "List Projects", projects_path
+				li
 					= link_to "Login", new_user_session_path, :class => "button"
 
 .container
