@@ -1,16 +1,8 @@
 .row
-  div class="large-12 columns"
-    h1 Projects
+  div class="large-8 columns"
+    h2 Projects
 
-    table
-      tr
-        th Title
-        th Url
-        th Description
-        th
-        th
-        th
-
+    dl
       = render @projects
     br
     - if user_signed_in?
