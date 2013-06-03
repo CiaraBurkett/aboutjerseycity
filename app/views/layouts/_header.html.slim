@@ -2,7 +2,7 @@ nav class="top-bar"
 	ul class="title-area"
 		li.name
 			h1 
-				|<a href="/"><i class="icon-map-marker"></i> About Jersey City<sup>beta</sup></a>
+				|<a href="/"><i class="icon-map-marker"></i> About Jersey City<sup>alpha</sup></a>
 		li class="toggle-topbar menu-icon"
 			a href="#"
 				span Menu
@@ -26,11 +26,13 @@ nav class="top-bar"
 					= link_to "Edit Profile", edit_user_registration_path
 				li
 					= link_to "Logout", destroy_user_session_path, method: :delete, :class => "button"
+				li.divider
 			- else
 				li
 					= link_to "List Projects", projects_path
 				li
 					= link_to "Login", new_user_session_path, :class => "button"
+				li.divider
 
 .container
 	header.row
