@@ -1012,10 +1012,24 @@
 @import url('foundation');
 @import url('font-awesome.min.css');
 
+/*  GLOBAL  */
+body {
+	font-family: "pragmatica-web", sans-serif;
+	h1, h2, h3, h4, h5, h6 {
+		font-family: "pragmatica-web", sans-serif;
+		font-weight: 300;
+	}
+}
+
+/*  HEADER  */
 h1 i {
 	font-size: 30px;
 }
+h1 sup {
+	font-style: italic;
+}
 
+/*  PROJECTS  */
 dt {
 	margin-top: 60px;
 }
@@ -1025,10 +1039,10 @@ dl ul {
 	list-style-type: none;
 	margin-top: -15px;
 	padding: none;
-		li {
-			display: inline-block;
-			padding-right: 10px;
-		}
+	li {
+		display: inline-block;
+		padding-right: 10px;
+	}
 }
 
 
