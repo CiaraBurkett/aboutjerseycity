@@ -1,12 +1,3 @@
-/ tr
-/   td = project.title
-/   td = project.url
-/   td = project.description
-/   td = link_to 'Show', project
-/   - if current_user == project.user
-/     td = link_to 'Edit', edit_project_path(project)
-/     td = link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
-
 h4
 	dt = link_to project.title, project
 dd = project.description

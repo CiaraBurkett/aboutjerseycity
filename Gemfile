@@ -4,6 +4,7 @@ gem 'rails', '3.2.13'
 gem 'slim-rails'
 gem 'devise', '~> 2.0.0'
 gem 'devise_mailchimp'
+gem "paperclip", "~> 3.0"
 
 group :development, :test do
 	gem 'sqlite3'
