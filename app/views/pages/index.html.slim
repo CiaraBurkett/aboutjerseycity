@@ -17,12 +17,13 @@
 		- if user_signed_in?
 			.panel
 				h2 Dashboard
-				/ Some kind of JS visual analytics thing
+				/ Use Analytics.js and D3.js (with CoffeeScript?) to create dynamic infographic
+				/ h3 My Projects
 		- else
 			.panel
 				h2 Welcome!
 				p About Jersey City is an online directory of creative and entrepreneurial projects born and raised in Jersey City.
-				p Want to see your project on the home page?
+				p Want to see your project listed in our directory?
 				= link_to "Sign up!", new_user_registration_path, :class => "radius button"
 	div class="large-4 columns"
 		h3 Sponsors

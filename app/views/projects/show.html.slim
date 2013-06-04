@@ -1,20 +1,21 @@
 .row
-  div class="large-12 columns"
-    p
-      strong Title:  
-      = @project.title
-    p
-      strong Url:  
-      = @project.url
-    p
-      strong Description:  
-      = @project.description
-    p
-      strong User:  
-      = @project.user.name
-    
-    - if current_user == @project.user
+  div class="large-8 columns"
+    .panel
+      h2 = @project.title
+      p 
+        h3 = link_to @project.url, @project.url, :target => "_blank"
+      p = @project.description
       p
-        = link_to 'Edit', edit_project_path(@project)
-    p
-      = link_to 'Back', projects_path
+        em by:  
+        = @project.user.name
+      
+    ul class="inline-list right"
+      - if current_user == @project.user
+        li
+          = link_to 'Edit', edit_project_path(@project)
+      li
+        = link_to 'Back to Projects', projects_path
+
+  div class="large-4 columns"
+    .panel
+      img src="http://placehold.it/400x300&text=Project Image"

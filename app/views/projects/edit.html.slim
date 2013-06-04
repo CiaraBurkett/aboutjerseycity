@@ -1,10 +1,11 @@
 .row
-  div class="large-12 columns"
-    h1 Editing project
+  div class="large-8 columns"
+    h2 Editing project
 
     == render 'form'
-    p
-      = link_to 'Show', @project
-    p
-      = link_to 'Back', projects_path
+    ul class="inline-list right"
+	    li
+	      = link_to 'Show', @project
+	    li
+	      = link_to 'Back to Projects', projects_path
 

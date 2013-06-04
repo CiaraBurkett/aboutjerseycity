@@ -7,13 +7,15 @@
 /     td = link_to 'Edit', edit_project_path(project)
 /     td = link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete
 
-h5
+h4
 	dt = project.title
 dd = project.description
 hr
 ul
 	li
-		= link_to 'Show', project
+		i class="icon-plus"
+	li
+		= link_to 'Info', project
 	- if current_user == project.user
 		li
 			= link_to 'Edit', edit_project_path(project)

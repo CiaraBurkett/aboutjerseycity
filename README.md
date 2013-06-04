@@ -18,7 +18,8 @@ About Jersey City is a directory of businesses, organizations, and artistic proj
 	* <del>A User has a profile/account</del>
 		* <del>Profile can be CRUD</del>
 	* Users have Dashboards
-		* Dashboards have information about Project analytics
+		* Information about Project analytics (page views)
+		* List of current_user's Projects and links to show, edit, destroy
 * Add Admin
   * Use CanCan gem
 * Social
