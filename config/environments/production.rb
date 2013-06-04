@@ -65,6 +65,9 @@ Aboutjerseycity::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
+  # Google Analytics
+  GA.tracker = "UA-41456421-1"
+
   # Default Devise URL for production environment
   config.action_mailer.default_url_options = { :host => 'aboutjerseycity.com' }
 end

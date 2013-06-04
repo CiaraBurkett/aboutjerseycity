@@ -20,9 +20,15 @@ head
   = stylesheet_link_tag "application"
   = javascript_include_tag "vendor/custom.modernizr"
   = csrf_meta_tag
+
+  / Google Analytics
+  = analytics_init if Rails.env.production?
+
+  / Typekit Pragmatica Web
   script type="text/javascript" src="//use.typekit.net/dyp4dqw.js"
   script type="text/javascript" try{Typekit.load();}catch(e){}
 
+  / ShareThis Button
   / script type="text/javascript" var switchTo5x=true;
   / script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"
   / script type="text/javascript" stLight.options({publisher: "407ebe12-f168-489b-b890-9b15784a5928", doNotHash: false, doNotCopy: false, hashAddressBar: true});
