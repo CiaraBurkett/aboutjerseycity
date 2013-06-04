@@ -10,13 +10,14 @@
 
       .field
         = f.label :title
-        = f.text_field :title
+        = f.text_field :title, :placeholder => "My Project Title"
       .field
         = f.label :url
-        = f.text_field :url
+        = f.text_field :url, :placeholder => "http://www.example.com"
       .field
         = f.label :description
-        = f.text_field :description
+        = f.text_field :description, :placeholder => "Please limit your description to less than five sentences."
       .field
+        = f.label :image
         = f.file_field :image
       .actions = f.submit 'Save', :class => "small radius button"
