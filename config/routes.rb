@@ -1,13 +1,18 @@
 Aboutjerseycity::Application.routes.draw do
   
+  root :to => 'pages#index'
+  get 'about' => 'pages#about'
+  get 'contact' => 'pages#contact'
+
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   resources :projects
 
 
   devise_for :users
-
-  root :to => 'pages#index'
-  get 'about' => 'pages#about'
-  get 'contact' => 'pages#contact'
+  ActiveAdmin.routes(self)
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

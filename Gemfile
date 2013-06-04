@@ -6,6 +6,7 @@ gem 'devise', '~> 2.0.0'
 gem 'devise_mailchimp'
 gem "paperclip", "~> 3.0"
 gem 'google-analytics-rails'
+gem 'activeadmin'
 
 group :development, :test do
 	gem 'sqlite3'
