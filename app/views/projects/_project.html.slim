@@ -6,7 +6,7 @@ ul
 	li
 		i class="icon-plus"
 	li
-		= link_to 'Info', project
+		= link_to 'View', project
 	- if current_user == project.user
 		li
 			= link_to 'Edit', edit_project_path(project)
