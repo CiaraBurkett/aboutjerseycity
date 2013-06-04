@@ -40,7 +40,7 @@ body
 	- flash.each do |name, msg|
     	.row
       		div class="large-12 columns"
-        		div data-alert="" class="alert-box"
+        		div data-alert="" class="alert-box radius"
           			= content_tag(:div, msg, class: "alert alert-#{name}")
           			a href="#" class="close" &times;
 

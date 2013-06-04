@@ -1,28 +1,14 @@
-/ - if user_signed_in?
-/ 	/ .row
-/ 	/ 	div class="large-12 columns"
-/ 	/ 		.panel
-/ 	/ 			h2 Dashboard
-/ - else
-/ 	.row
-/ 		div class="large-12 columns"
-/ 			.panel
-/ 				h2 Welcome!
-/ 		        p About Jersey City is an online directory of creative and entrepreneurial projects born and raised in Jersey City.
-/ 				p Want to see your project on the home page?
-/ 				= link_to "Sign up!", new_user_registration_path, :class => "radius button"
-
 .row
 	div class="large-8 columns"
 		- if user_signed_in?
-			.panel
+			div class="panel radius"
 				h2 Dashboard
 				/ Use Analytics.js and D3.js (with CoffeeScript?) to create dynamic infographic
 				/ h3 My Projects
 				p Projest listings, analytics, and more coming in the beta release!  If you have any ideas for features you think would make About Jersey City even better, feel free to tell me about it!
 				= link_to "Support Forums", "http://www.aboutjerseycity.uservoice.com", :target => "_blank"
 		- else
-			.panel
+			div class="panel radius"
 				h2 Welcome!
 				p About Jersey City is an online directory of creative and entrepreneurial projects born and raised in Jersey City.  We help people spread the word around town!
 				p Want to see your project listed in our directory?

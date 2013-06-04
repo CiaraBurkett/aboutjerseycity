@@ -1,6 +1,6 @@
 .row
   div class="large-8 columns"
-    .panel
+    div class="panel radius"
       h2 = @project.title
       p 
         h3 = link_to @project.url, @project.url, :target => "_blank"
@@ -25,5 +25,5 @@
         = link_to 'Back to Projects', projects_path
 
   div class="large-4 columns"
-    .panel
+    div class="panel radius"
       = image_tag @project.image, :alt => "This project doesn't have an image yet!"

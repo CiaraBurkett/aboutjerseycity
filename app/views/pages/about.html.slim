@@ -1,0 +1,38 @@
+.row
+	div class="large-4 columns"
+		div class="panel radius"
+			h3 Who?
+			p Hello!  I'm Ciara Burkett, and I made About Jersey City.  I'm a local Rails developer, web designer, and entrepreneur.  In my spare time, I organize the JerseyCity.rb Ruby learning group and About Jersey City, an entrepreneur networking and collaboration group named after the project.
+			p Got an idea for an app?  I charge $1,000/week for design and development work.
+			center
+				= link_to "Contact Me!", contact_path, :class => "radius button"
+
+	div class="large-8 columns"
+		h2 What?
+		p About Jersey City is a directory of local projects.  This can be anything from a weekly event, a non-profit organization, a business, an idea, or a reading group.
+		p Are you doing something cool and you want more people to know about it?
+		= link_to "Sign up!", new_user_registration_path, :class => "radius button"
+
+		h2 When?
+		p The alpha release of About Jersey City was launched June 2013.  Sporadic changes in web copy and small bug fixes will occur occasionally, but the next major release is estimated to launch September 2013.
+
+		h2 Where?
+		p Jersey City, of course!
+		p I've been planning, designing, and coding About Jersey City in my home office and various cafes around town.
+
+		h2 Why?
+		p For two reasons:
+		ol
+			li It's exceedingly difficult for someone on a tiny budget to promote their work without being plugged into social media 24/7.
+			li As far as I know, there really isn't a central place to just browse local projects.  (Well, there is now!) 
+
+.row
+	div class="large-12 columns"
+		div class="panel radius"
+			h4 How?
+			.row
+				div class="large-9 columns"
+					p I'm so glad you asked!  I made About Jersey City using Ruby on Rails, a web application framework great for saving time and money on projects.  Looking for a developer to help you realize your app dreams?
+				div class="large-3 columns"
+					= link_to "Get in touch!", contact_path, :class => "radius button right"
+
