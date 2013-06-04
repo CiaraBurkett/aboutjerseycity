@@ -1029,13 +1029,13 @@ body {
 		color: #444;
 		font-weight: 400;
 	}
-/*	a {
+	a {
 		color: #12998E;
 	}
 	a:hover {
 		color: #04B3A4;
 	}
-*/}
+}
 .row {
 	margin-top: 40px;
 }
@@ -1045,7 +1045,11 @@ body {
 	border-radius: 5px;
 }
 .button {
+	background: #12998E;
 	border: none;
+}
+.button:hover {
+	background: #04B3A4;
 }
 
 /*  HEADER  */
