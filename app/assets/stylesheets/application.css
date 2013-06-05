@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree .
+ *= foundation
  *= require foundation_and_overrides
  *= require font-awesome
  *= require active_admin
