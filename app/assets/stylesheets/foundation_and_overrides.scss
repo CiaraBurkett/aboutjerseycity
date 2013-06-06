@@ -1017,7 +1017,10 @@
 /*  GLOBAL  */
 body {
 	font-family: "pragmatica-web", sans-serif;
-	h1, h2, h3, h4, h5, h6 {
+	h1 {
+		font-family: 'Roboto Slab', serif;
+	}
+	h2, h3, h4, h5, h6 {
 		color: #444;
 		font-family: "pragmatica-web", sans-serif;
 		font-weight: 300;
@@ -1104,7 +1107,4 @@ dl ul {
 i.icon-plus {
 	color: #999;
 }
-
-/*  FOOTER  */
-
 
