@@ -3,8 +3,8 @@
 		div class="panel radius"
 			h3 Who?
 			p Hello!  I'm <strong>Ciara Burkett</strong>, and I made About Jersey City.  I'm a local Rails developer, web designer, and entrepreneur.  
-			p In my spare time, I organize the JerseyCity.rb Ruby learning group and About Jersey City, an entrepreneur networking and collaboration group named after the project.
-			p Got an idea for an app?  I charge $1,000/week for design and development work.
+			p In my spare time, I organize the <a href="http://www.meetup.com/JerseyCityrb" target="_blank">JerseyCity.rb</a> Ruby learning group and <a href="http://www.meetup.com/AboutJerseyCity" target="_blank">About Jersey City</a>, an entrepreneur networking and collaboration group named after the project.
+			p Got an idea for an app?
 			center
 				= link_to "Contact Me!", contact_path, :class => "radius button"
 
@@ -12,7 +12,7 @@
 		h2 What?
 		p About Jersey City is a directory of local projects.  This can be anything from a weekly event, a non-profit organization, a business, an idea, or a reading group.
 		p Are you doing something cool and you want more people to know about it?
-		= link_to "Sign up!", new_user_registration_path
+		= link_to "Sign up!", new_user_registration_path, :class => "radius button"
 
 		h2 When?
 		p The alpha release of About Jersey City was launched June 2013.  Sporadic changes in web copy and small bug fixes will occur occasionally, but the next major release is estimated to launch September 2013.
@@ -25,7 +25,7 @@
 		p For two reasons:
 		ol
 			li It's exceedingly difficult for someone on a tiny budget to promote their work without being plugged into social media 24/7.
-			li As far as I know, there really isn't a central place to just browse local projects.  (Well, there is now!) 
+			li As far as I know, there really isn't a central place to just browse local projects of all kinds.  (Well, there is now!) 
 
 .row
 	div class="large-12 columns"
@@ -33,7 +33,7 @@
 			h4 How?
 			.row
 				div class="large-9 columns"
-					p I'm so glad you asked!  I made About Jersey City using Ruby on Rails, a web application framework great for saving time and money on projects.  Looking for a developer to help you realize your app dreams?
+					p I'm so glad you asked!  I made About Jersey City using Ruby on Rails, a web application framework great for saving time and money on projects.  Looking for a developer to help you bring your ideas to life?
 				div class="large-3 columns"
 					= link_to "Get in touch!", contact_path, :class => "radius button right"
 
