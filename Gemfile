@@ -5,12 +5,14 @@ gem 'slim-rails'
 gem 'devise', '~> 2.0.0'
 gem 'devise_mailchimp'
 gem "paperclip", "~> 3.0"
+gem 'aws-sdk'
 gem 'google-analytics-rails'
 gem 'activeadmin'
 
 group :development, :test do
 	gem 'sqlite3'
 	gem 'better_errors'
+    gem 'binding_of_caller'
 end
 
 group :production do
