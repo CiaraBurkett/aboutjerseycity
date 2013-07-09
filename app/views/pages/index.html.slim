@@ -20,3 +20,10 @@
 		h3 Sponsors
 		a href="/contact"
 			img src="http://placehold.it/400x300&text=Your Ad Here"
+
+		- if user_signed_in?
+			h3 Latest News
+			a class="twitter-timeline" href="https://twitter.com/aboutjerseycity" data-widget-id="354718874823958528" Tweets by @aboutjerseycity
+
+			script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
